@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.aurionpro.cashpro.rest.paypro.transactions.SelfServiceRequestType"/>
+<fullyQualifiedTypeName name="com.aurionpro.cashpro.rest.paypro.transactions.SelfServiceProductType"/>
+<fullyQualifiedTypeName name="com.interfaces.service.ServiceRequestService"/>
+<fullyQualifiedTypeName name="com.interfaces.model.ServiceResponse"/>
+<fullyQualifiedTypeName name="com.interfaces.model.ServiceRequest"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+<fullyQualifiedTypeName name="javax.validation.Valid"/>
+<fullyQualifiedTypeName name="com.interfaces.model.common.SelfServiceRequestBO"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.domain.EntityScan"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
+<fullyQualifiedTypeName name="javax.persistence.SequenceGenerator"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="ch.qos.logback.core.status.Status"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.AccountRequest"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.AccountResponse"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.status"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.Account2"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.bancassurances"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.investments"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.loans"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.creditCards"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.deposits"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="com.swayaan.ms.accountservice.model.Query"/>
+<fullyQualifiedTypeName name="org.springframework.boot.context.properties.EnableConfigurationProperties"/>
+<fullyQualifiedTypeName name="com.example.demo.property.FileStorageProperties"/>
+</qualifiedTypeNameHistroy>

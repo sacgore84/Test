@@ -1,0 +1,13 @@
+package com.interfaces.service;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.interfaces.model.common.SelfServiceRequestBO;
+
+//@Component
+@Repository
+public interface  ServiceRequestService extends JpaRepository<SelfServiceRequestBO, Long> {
+
+
+}

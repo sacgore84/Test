@@ -1,0 +1,10 @@
+spring.datasource.url=jdbc:oracle:thin:@172.16.1.135:1521:orcl
+spring.datasource.username=BASE_PRODUCT_PAYPRO1
+spring.datasource.password=BASE_PRODUCT_PAYPRO1
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.Oracle12cDialect
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.jpa.show-sql=true
+
+spring.application.name=currency-conversion-service
+server.port=9091
+eureka.client.service-url.default-zone=http://localhost:8761/eureka
