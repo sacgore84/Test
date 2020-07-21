@@ -1,0 +1,102 @@
+﻿kind: Build
+apiVersion: build.openshift.io/v1
+metadata:
+  annotations:
+    openshift.io/build-config.name: account-service-2
+    openshift.io/build.number: '1'
+    openshift.io/build.pod-name: account-service-2-1-build
+  selfLink: >-
+    /apis/build.openshift.io/v1/namespaces/testproject/builds/account-service-2-1
+  resourceVersion: '316595'
+  name: account-service-2-1
+  uid: 438cb774-f06e-476f-8f95-95d274ffc62e
+  creationTimestamp: '2020-07-21T13:16:16Z'
+  namespace: testproject
+  ownerReferences:
+    - apiVersion: build.openshift.io/v1
+      kind: BuildConfig
+      name: account-service-2
+      uid: 7fb7b870-0896-41e3-8524-00d0849d35ed
+      controller: true
+  labels:
+    app: account-service-2
+    app.kubernetes.io/part-of: account-service-2-app
+    app.kubernetes.io/instance: account-service-2
+    openshift.io/build-config.name: account-service-2
+    app.kubernetes.io/component: account-service-2
+    openshift.io/build.start-policy: Serial
+    buildconfig: account-service-2
+    app.openshift.io/runtime: java
+    app.kubernetes.io/name: java
+    app.openshift.io/runtime-version: '11'
+spec:
+  serviceAccount: builder
+  source:
+    type: Git
+    git:
+      uri: >-
+        https://github.com/sacgore84/Test/tree/master/MicroservicePOC/Account-Service2
+    contextDir: /
+  strategy:
+    type: Source
+    sourceStrategy:
+      from:
+        kind: DockerImage
+        name: >-
+          image-registry.openshift-image-registry.svc:5000/openshift/java@sha256:4dc1ae6af9a3efbbd28c1b765faa6fcea3f8eddccd2347ad97713d312f57b511
+      pullSecret:
+        name: builder-dockercfg-hsjqm
+      env:
+        - name: test
+          value: '1'
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'account-service-2:latest'
+    pushSecret:
+      name: builder-dockercfg-hsjqm
+  resources: {}
+  postCommit: {}
+  nodeSelector: null
+  triggeredBy:
+    - message: Image change
+      imageChangeBuild:
+        imageID: >-
+          image-registry.openshift-image-registry.svc:5000/openshift/java@sha256:4dc1ae6af9a3efbbd28c1b765faa6fcea3f8eddccd2347ad97713d312f57b511
+        fromRef:
+          kind: ImageStreamTag
+          namespace: openshift
+          name: 'java:11'
+status:
+  output: {}
+  config:
+    kind: BuildConfig
+    namespace: testproject
+    name: account-service-2
+  reason: FetchSourceFailed
+  message: Failed to fetch the input source.
+  outputDockerImageReference: >-
+    image-registry.openshift-image-registry.svc:5000/testproject/account-service-2:latest
+  duration: 13000000000
+  startTimestamp: '2020-07-21T13:16:16Z'
+  conditions:
+    - type: New
+      status: 'False'
+      lastUpdateTime: '2020-07-21T13:16:16Z'
+      lastTransitionTime: '2020-07-21T13:16:16Z'
+    - type: Pending
+      status: 'False'
+      lastUpdateTime: '2020-07-21T13:16:28Z'
+      lastTransitionTime: '2020-07-21T13:16:28Z'
+    - type: Running
+      status: 'False'
+      lastUpdateTime: '2020-07-21T13:16:29Z'
+      lastTransitionTime: '2020-07-21T13:16:29Z'
+    - type: Failed
+      status: 'True'
+      lastUpdateTime: '2020-07-21T13:16:29Z'
+      lastTransitionTime: '2020-07-21T13:16:29Z'
+      reason: FetchSourceFailed
+      message: Failed to fetch the input source.
+  completionTimestamp: '2020-07-21T13:16:29Z'
+  phase: Failed
