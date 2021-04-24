@@ -1,0 +1,5 @@
+bin/*
+dist/*
+report/*
+reports/*
+dfbin/bash: q: command not found
